@@ -24,7 +24,6 @@ a>img {
 }
 
 h4 a img:hover {
-    animation: name 0.5s timing-function delay iteration-count direction fill-mode;
     transform: scale(1.2);
 }
 
@@ -67,17 +66,58 @@ a:hover {
 
 .links {
     margin-top: 20px;
-    ;
 }
 
 @media (max-width: 710px) {
+    body {
+        background-color: white;
+        font-family: 'PressStart2P', sans-serif;
+        font-size: 13px;
+    }
+    h4 a {
+        margin-top: 7px;
+        transition: transform 0.3s ease;
+    }
+    h4 a img {
+        transition: transform 0.3s ease;
+    }
+    a>img {
+        height: 20px;
+    }
+    h4 a img:hover {
+        transform: scale(1.2);
+    }
+    span {
+        color: red;
+    }
     .projectsGrid {
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        justify-items: center;
     }
     .grid-item {
+        width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
         box-sizing: border-box;
+    }
+    img {
+        height: 180px;
+    }
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+    a:hover {
+        color: lightblue;
+    }
+    .fa-eye,
+    .fa-github {
+        font-size: 22px;
+    }
+    .links {
+        margin-top: 20px;
     }
 }
