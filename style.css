@@ -82,7 +82,7 @@ a:hover {
         transition: transform 0.3s ease;
     }
     a>img {
-        height: 20px;
+        width: 23px;
     }
     h4 a img:hover {
         transform: scale(1.2);
@@ -106,6 +106,7 @@ a:hover {
     }
     img {
         height: 180px;
+        width: 100%;
     }
     a {
         text-decoration: none;
